@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <span class="nav__logo">ქვეყნების მიმოხილვა</span>
+      <span class="nav__logo">🌍 ქვეყნების მიმოხილვა</span>
       <div class="nav__links">
         <a href="index.html">ძიება</a>
         <a href="saved.html">შენახული</a>
@@ -20,6 +20,7 @@
       </div>
     </nav>
   </header>
+
   <main>
     <section class="search-section">
       <form id="search-form">
@@ -45,16 +46,21 @@
         </label>
         <button type="submit">ძიება</button>
       </form>
+      <button id="sort-btn" type="button">დალაგება მოსახლეობით</button>
     </section>
-    <p id="loading-msg" hidden>იტვირთება...</p>
+
+    <p id="loading-msg" hidden>იტვირთება…</p>
     <p id="error-msg" hidden></p>
+
     <section class="results-section">
       <div id="results-grid" class="results-grid"></div>
     </section>
   </main>
+
   <footer>
     <p>© 2026 ქვეყნების მიმოხილვა | მონაცემები: REST Countries API</p>
   </footer>
+
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
